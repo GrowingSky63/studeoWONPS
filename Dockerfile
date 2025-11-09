@@ -4,7 +4,7 @@ FROM python:3.11-slim
 # Definir diretório de trabalho
 WORKDIR /app
 
-RUN apt-get update && apt-get install -y nodejs
+RUN apt-get update && apt-get install -y nodejs npm
 
 # Copiar código do projeto
 COPY . .
